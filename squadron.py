@@ -67,7 +67,7 @@ class Soldier(pygame.sprite.Sprite):
 def main():
 	#Initialize Screen
     pygame.init()
-    screen = pygame.display.set_mode((640,380))
+    screen = pygame.display.set_mode((640,360))
     pygame.display.set_caption("Squadron")
 	
     #Fill Background
@@ -81,19 +81,11 @@ def main():
     player = Soldier("Bob", "red_square.png")
     allSprites = pygame.sprite.Group(player)
 	
-	
-	
-
-	
-
     #Initialize clock
     clock = pygame.time.Clock()
     keepGoing = True
 
     #Game Loop
-    
-    
-
     while(keepGoing):
         clock.tick(30)
         for event in pygame.event.get():
