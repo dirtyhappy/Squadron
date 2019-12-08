@@ -83,6 +83,9 @@ class Terrain(pygame.sprite.Sprite):
 									bitmap[row,col] = pygame.Color(255,255,255)
 								
 				return bitmap
+
+		def update(self):
+			self.surface = pygame.PixelArray.make_surface(self.bitmap)
 """
 		def flood_fill(self,stack,bitmap,surface):
 				while len(stack) > 0:
